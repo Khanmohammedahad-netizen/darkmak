@@ -2,7 +2,7 @@ import { useRegion } from '../context/RegionContext';
 import { useRouter } from '../hooks/useRouter';
 import { getRegionContent } from '../content/regionContent';
 import { ArrowRight, Code2, Database, Network, Layers } from 'lucide-react';
-import { RotatingGlobe } from '../components/ui/RotatingGlobe';
+import { RotatingGlobe } from '../components/RotatingGlobe';
 
 export function Home() {
   const { region } = useRegion();
