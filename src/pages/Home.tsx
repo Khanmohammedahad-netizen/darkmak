@@ -2,7 +2,7 @@ import { useRegion } from '../context/RegionContext';
 import { useRouter } from '../hooks/useRouter';
 import { getRegionContent } from '../content/regionContent';
 import { ArrowRight, Code2, Database, Network, Layers } from 'lucide-react';
-import { NanobotSwarm } from '../components/NanobotSwarm';
+import { NanobotGlobe } from "../components/NanobotGlobe";
 
 export function Home() {
   const { region } = useRegion();
@@ -15,8 +15,8 @@ export function Home() {
       {/* ================= HERO ================= */}
       <section className="relative h-screen overflow-hidden flex items-center justify-center">
 
-        {/* Nanobot Swarm Background */}
-        <NanobotSwarm />
+        {/* Nanobot Globe */}
+        <NanobotGlobe />
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-cyan-950/20 via-transparent to-transparent" />
