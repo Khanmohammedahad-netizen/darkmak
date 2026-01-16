@@ -8,7 +8,7 @@ export function CurrentWork() {
           <div className="inline-block px-4 py-2 border border-cyan-400/30 text-cyan-400 text-xs tracking-widest mb-8">
             ACTIVE PROJECTS
           </div>
-          <h1 className="text-6xl font-light mb-12 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-light mb-12 leading-tight">
             Current Work & Progress
           </h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed max-w-[700px]">
@@ -26,7 +26,7 @@ export function CurrentWork() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Complete business management system handling finance, project tracking, client operations, and resource allocation. Includes automated workflows for common business processes.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="text-gray-500">
                 <span className="text-gray-600">Stack:</span> React, Node.js, PostgreSQL
               </div>
@@ -51,7 +51,7 @@ export function CurrentWork() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Automated document generation system integrated with ERP platform. Handles invoice creation, quotation workflows, approval routing, and PDF generation.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="text-gray-500">
                 <span className="text-gray-600">Features:</span> Template engine, approval flows
               </div>
@@ -76,7 +76,7 @@ export function CurrentWork() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Role-based access control system for external vendors and internal team members. Granular permission management, activity logging, and integration with existing authentication infrastructure.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="text-gray-500">
                 <span className="text-gray-600">Progress:</span> Core RBAC implemented
               </div>
@@ -101,7 +101,7 @@ export function CurrentWork() {
             <p className="text-gray-400 leading-relaxed mb-6">
               Internal platform for managing company events, client meetings, and operational activities. Calendar integration, notification system, and resource booking.
             </p>
-            <div className="grid grid-cols-2 gap-4 text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="text-gray-500">
                 <span className="text-gray-600">Progress:</span> Core scheduling complete
               </div>
@@ -120,7 +120,7 @@ export function CurrentWork() {
 
         <div className="py-32 border-t border-white/5">
           <h2 className="text-3xl font-light mb-8">Engineering Priorities</h2>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <h3 className="text-cyan-400 text-sm tracking-widest mb-4">RELIABILITY</h3>
               <p className="text-gray-500 text-sm leading-relaxed">

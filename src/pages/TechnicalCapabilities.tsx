@@ -5,7 +5,7 @@ export function TechnicalCapabilities() {
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="mb-32">
-          <h1 className="text-6xl font-light mb-12 leading-tight max-w-[800px]">
+          <h1 className="text-4xl md:text-6xl font-light mb-12 leading-tight max-w-[800px]">
             Technical Stack & Infrastructure Expertise
           </h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed max-w-[700px]">
@@ -14,7 +14,7 @@ export function TechnicalCapabilities() {
         </div>
 
         <div className="space-y-24">
-          <div className="grid grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="border border-white/5 p-12 hover:border-cyan-400/20 transition-colors">
               <Server className="w-10 h-10 text-cyan-400 mb-8" strokeWidth={1.5} />
               <h2 className="text-3xl font-light mb-6">Full-Stack Engineering</h2>
@@ -78,11 +78,11 @@ export function TechnicalCapabilities() {
         </div>
 
         <div className="mt-32 py-32 border-t border-white/5">
-          <div className="grid grid-cols-12 gap-16">
-            <div className="col-span-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+            <div className="lg:col-span-4">
               <h2 className="text-3xl font-light">Integration Capabilities</h2>
             </div>
-            <div className="col-span-8 space-y-6">
+            <div className="lg:col-span-8 space-y-6">
               <p className="text-xl text-gray-400 leading-relaxed">
                 Systems are designed for integration with existing enterprise infrastructure. We implement standard protocols, maintain API compatibility, and ensure data consistency across platforms.
               </p>
@@ -96,7 +96,7 @@ export function TechnicalCapabilities() {
         <div className="py-32 border-t border-white/5">
           <div className="max-w-[900px]">
             <h2 className="text-3xl font-light mb-8">Quality & Testing Standards</h2>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-cyan-400 text-sm tracking-widest mb-4">AUTOMATED TESTING</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">

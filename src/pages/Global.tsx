@@ -13,15 +13,15 @@ export function Global() {
           <div className="inline-block px-4 py-2 border border-cyan-400/30 text-cyan-400 text-xs tracking-widest mb-8">
             EXECUTIVE OVERVIEW
           </div>
-          <h1 className="text-7xl font-light mb-12 max-w-[900px] leading-[1.1]">
+          <h1 className="text-4xl md:text-7xl font-light mb-12 max-w-[900px] leading-[1.1]">
             Unified Architecture Across Markets
           </h1>
-          <p className="text-2xl text-gray-400 font-light leading-relaxed max-w-[800px]">
+          <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-[800px]">
             {content.positioning}
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-px bg-white/5 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 mb-32">
           <div className="bg-[#0a0a0f] p-16 border border-white/5">
             <Globe2 className="w-12 h-12 text-cyan-400 mb-8" strokeWidth={1.5} />
             <h3 className="text-2xl font-light mb-6">Standards-Based Delivery</h3>
@@ -46,11 +46,11 @@ export function Global() {
         </div>
 
         <div className="py-32 border-t border-white/5">
-          <div className="grid grid-cols-12 gap-16">
-            <div className="col-span-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+            <div className="lg:col-span-4">
               <h2 className="text-3xl font-light mb-6">System-Level Thinking</h2>
             </div>
-            <div className="col-span-8 space-y-8">
+            <div className="lg:col-span-8 space-y-8">
               <p className="text-xl text-gray-400 leading-relaxed">
                 We approach software engineering as infrastructure design. Each system is architected for integration, maintainability, and operational longevity.
               </p>

@@ -59,27 +59,27 @@ export function Services() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1600px] mx-auto px-8">
-        <div className="mb-24">
+        <div className="mb-16 md:mb-24">
           <div className="max-w-[900px]">
-            <h1 className="text-7xl font-light mb-8 leading-tight">Service Capabilities</h1>
+            <h1 className="text-4xl md:text-7xl font-light mb-8 leading-tight">Service Capabilities</h1>
             <p className="text-xl text-gray-400 font-light leading-relaxed">
               Engineering disciplines maintained internally. Each service area represents established technical capability with documented processes and quality standards.
             </p>
           </div>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-20 md:space-y-32">
           {services.map((service, index) => (
-            <div key={index} className="grid grid-cols-12 gap-16 items-start">
-              <div className="col-span-5">
+            <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+              <div className="lg:col-span-5">
                 <service.icon className="w-16 h-16 text-cyan-400 mb-8" strokeWidth={1.5} />
                 <h2 className="text-4xl font-light mb-6">{service.title}</h2>
                 <p className="text-gray-400 leading-relaxed text-lg">{service.description}</p>
               </div>
-              <div className="col-span-7">
-                <div className="bg-gradient-to-br from-white/[0.02] to-transparent border border-white/5 p-12">
+              <div className="lg:col-span-7">
+                <div className="bg-gradient-to-br from-white/[0.02] to-transparent border border-white/5 p-8 md:p-12">
                   <h3 className="text-sm text-cyan-400 tracking-widest mb-8">TECHNICAL CAPABILITIES</h3>
-                  <div className="grid grid-cols-2 gap-x-12 gap-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                     {service.capabilities.map((capability, capIndex) => (
                       <div key={capIndex} className="flex items-start gap-3">
                         <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />

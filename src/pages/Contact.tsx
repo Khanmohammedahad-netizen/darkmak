@@ -58,10 +58,10 @@ export function Contact() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1400px] mx-auto px-8">
-        <div className="grid grid-cols-12 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           <div className="col-span-5">
-            <div className="sticky top-32">
-              <h1 className="text-6xl font-light mb-8 leading-tight">
+            <div className="lg:sticky lg:top-32">
+              <h1 className="text-4xl md:text-6xl font-light mb-8 leading-tight">
                 Initiate Technical Discussion
               </h1>
               <p className="text-xl text-gray-400 font-light leading-relaxed mb-12">
@@ -91,9 +91,9 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="col-span-7">
+          <div className="lg:col-span-7">
             <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm text-gray-400 mb-3">Name</label>
                   <input
@@ -116,7 +116,7 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm text-gray-400 mb-3">Email</label>
                   <input
@@ -170,7 +170,7 @@ export function Contact() {
                 </select>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm text-gray-400 mb-3">Timeline</label>
                   <select

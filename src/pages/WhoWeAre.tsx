@@ -10,7 +10,7 @@ export function WhoWeAre() {
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1200px] mx-auto px-8">
         <div className="mb-32">
-          <h1 className="text-6xl font-light mb-12 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-light mb-12 leading-tight">
             Engineering Organization
           </h1>
           <p className="text-2xl text-gray-400 font-light leading-relaxed max-w-[700px]">
@@ -19,7 +19,7 @@ export function WhoWeAre() {
         </div>
 
         <div className="mb-32">
-          <div className="grid grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-light mb-8">Process Maturity</h2>
               <div className="space-y-6">
@@ -52,7 +52,7 @@ export function WhoWeAre() {
 
         <div className="py-32 border-t border-white/5">
           <h2 className="text-4xl font-light mb-16">Partnership Approach</h2>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <div className="text-cyan-400 text-sm font-mono mb-4">01</div>
               <h3 className="text-xl font-light mb-4">Discovery Phase</h3>

@@ -32,7 +32,7 @@ export function Home() {
           <div className="max-w-[900px]">
             <div className="h-px w-24 bg-gradient-to-r from-cyan-400 to-transparent mb-12" />
 
-            <h1 className="text-7xl font-light tracking-tight mb-8 leading-[1.1]">
+            <h1 className="text-4xl md:text-7xl font-light tracking-tight mb-8 leading-[1.1]">
               {content.heroTitle}
             </h1>
 
@@ -50,12 +50,12 @@ export function Home() {
       </section>
 
       {/* ================= POSITIONING ================= */}
-      <section className="py-32 px-8">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-12 gap-16">
-          <div className="col-span-5">
-            <h2 className="text-5xl font-light mb-6">Enterprise Positioning</h2>
+      <section className="py-20 md:py-32 px-4 md:px-8">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <h2 className="text-4xl md:text-5xl font-light mb-6">Enterprise Positioning</h2>
           </div>
-          <div className="col-span-7">
+          <div className="lg:col-span-7">
             <p className="text-xl text-gray-400 font-light leading-relaxed mb-8">
               {content.positioning}
             </p>
@@ -68,16 +68,16 @@ export function Home() {
       </section>
 
       {/* ================= CAPABILITIES ================= */}
-      <section className="py-32 px-8 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
+      <section className="py-20 md:py-32 px-4 md:px-8 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent">
         <div className="max-w-[1400px] mx-auto">
-          <div className="mb-24">
-            <h2 className="text-5xl font-light mb-6">Core Capabilities</h2>
+          <div className="mb-16 md:mb-24">
+            <h2 className="text-4xl md:text-5xl font-light mb-6">Core Capabilities</h2>
             <p className="text-gray-500 text-lg">
               Engineering disciplines we maintain internally.
             </p>
           </div>
 
-          <div className="grid gap-px bg-white/5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5">
             {[
               {
                 icon: Database,
@@ -118,10 +118,10 @@ export function Home() {
       </section>
 
       {/* ================= CURRENT WORK ================= */}
-      <section className="py-32 px-8">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-12 gap-16">
-          <div className="col-span-7">
-            <h2 className="text-5xl font-light mb-8">Current Work</h2>
+      <section className="py-20 md:py-32 px-4 md:px-8">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="lg:col-span-7">
+            <h2 className="text-4xl md:text-5xl font-light mb-8">Current Work</h2>
 
             <div className="space-y-8">
               {[
@@ -137,7 +137,7 @@ export function Home() {
             </div>
           </div>
 
-          <div className="col-span-5 flex items-center">
+          <div className="lg:col-span-5 flex items-center">
             <p className="text-sm text-gray-600 leading-relaxed">
               Systems prioritize security, maintainability, and long-term operational reliability.
             </p>

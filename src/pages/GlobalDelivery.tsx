@@ -44,7 +44,7 @@ export function GlobalDelivery() {
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="mb-32">
-          <h1 className="text-6xl font-light mb-12 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-light mb-12 leading-tight">
             Global Delivery Capabilities
           </h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed max-w-[800px]">
@@ -63,16 +63,15 @@ export function GlobalDelivery() {
 
         <div className="mb-32">
           <h2 className="text-3xl font-light mb-12">Select Region for Localized View</h2>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {Object.values(REGIONS).map((r) => (
               <button
                 key={r.id}
                 onClick={() => setRegion(r.id)}
-                className={`p-8 border transition-all text-left ${
-                  region === r.id
+                className={`p-8 border transition-all text-left ${region === r.id
                     ? 'border-cyan-400 bg-cyan-400/5'
                     : 'border-white/10 hover:border-white/30 hover:bg-white/5'
-                }`}
+                  }`}
               >
                 <h3 className="text-lg font-light mb-2">{r.name}</h3>
                 <p className="text-xs text-gray-600">View regional approach</p>
@@ -83,7 +82,7 @@ export function GlobalDelivery() {
 
         <div className="py-32 border-t border-white/5">
           <h2 className="text-4xl font-light mb-16">Universal Delivery Standards</h2>
-          <div className="grid grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <h3 className="text-2xl font-light mb-6">Technical Consistency</h3>
               <p className="text-gray-400 leading-relaxed mb-4">
@@ -107,7 +106,7 @@ export function GlobalDelivery() {
 
         <div className="py-32 border-t border-white/5">
           <h2 className="text-4xl font-light mb-16">Distributed Team Coordination</h2>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="border border-white/5 p-8">
               <div className="text-cyan-400 text-sm font-mono mb-4">SYNCHRONIZATION</div>
               <h3 className="text-xl font-light mb-4">Unified Processes</h3>

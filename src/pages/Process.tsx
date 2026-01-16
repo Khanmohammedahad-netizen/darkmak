@@ -92,7 +92,7 @@ export function Process() {
     <div className="min-h-screen bg-[#0a0a0f] text-white pt-32">
       <div className="max-w-[1400px] mx-auto px-8">
         <div className="mb-32">
-          <h1 className="text-6xl font-light mb-12 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-light mb-12 leading-tight">
             Process & Methodology
           </h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed max-w-[800px]">
@@ -102,8 +102,8 @@ export function Process() {
 
         <div className="space-y-24 mb-32">
           {phases.map((phase, index) => (
-            <div key={index} className="grid grid-cols-12 gap-12 items-start">
-              <div className="col-span-4">
+            <div key={index} className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+              <div className="lg:col-span-4">
                 <div className="sticky top-32">
                   <phase.icon className="w-12 h-12 text-cyan-400 mb-6" strokeWidth={1.5} />
                   <div className="text-gray-600 text-sm font-mono mb-4">{phase.number}</div>
@@ -111,7 +111,7 @@ export function Process() {
                   <p className="text-gray-400 leading-relaxed">{phase.description}</p>
                 </div>
               </div>
-              <div className="col-span-8">
+              <div className="lg:col-span-8">
                 <div className="border border-white/5 p-10 bg-gradient-to-br from-white/[0.02] to-transparent">
                   <h3 className="text-cyan-400 text-xs tracking-widest mb-6">KEY ACTIVITIES</h3>
                   <div className="space-y-3 mb-8">
@@ -134,7 +134,7 @@ export function Process() {
 
         <div className="py-32 border-t border-white/5">
           <h2 className="text-4xl font-light mb-16">Core Principles</h2>
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <h3 className="text-xl font-light mb-4">Transparency</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
