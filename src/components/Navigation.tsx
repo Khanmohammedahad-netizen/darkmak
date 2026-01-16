@@ -38,10 +38,15 @@ export function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="lg:hidden text-white z-50 p-2"
+          className="lg:hidden text-white z-50 p-2 hover:bg-white/5 rounded-full transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? (
+            <X className="w-6 h-6" strokeWidth={1.5} />
+          ) : (
+            <Menu className="w-6 h-6" strokeWidth={1.5} />
+          )}
         </button>
 
         {/* Desktop Navigation */}
@@ -51,11 +56,10 @@ export function Navigation() {
               <button
                 key={item.route}
                 onClick={() => navigate(item.route)}
-                className={`text-sm tracking-wide transition-colors ${
-                  currentRoute === item.route
+                className={`text-sm tracking-wide transition-colors ${currentRoute === item.route
                     ? 'text-cyan-400'
                     : 'text-gray-400 hover:text-white'
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
@@ -80,11 +84,10 @@ export function Navigation() {
                       setRegion(r.id);
                       setIsRegionOpen(false);
                     }}
-                    className={`block w-full text-left px-4 py-3 text-sm transition-colors ${
-                      region === r.id
+                    className={`block w-full text-left px-4 py-3 text-sm transition-colors ${region === r.id
                         ? 'text-cyan-400 bg-cyan-400/5'
                         : 'text-gray-400 hover:text-white hover:bg-white/5'
-                    }`}
+                      }`}
                   >
                     {r.name}
                   </button>
@@ -96,25 +99,24 @@ export function Navigation() {
 
         {/* Mobile Navigation Overlay */}
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 bg-[#0a0a0f] z-40 flex flex-col pt-32 px-8 lg:hidden overflow-y-auto">
+          <div className="fixed inset-0 bg-[#0a0a0f] z-40 flex flex-col pt-24 px-8 lg:hidden h-[100dvh] overflow-y-auto">
             <div className="flex flex-col gap-6">
               {navItems.map((item) => (
                 <button
                   key={item.route}
                   onClick={() => handleNavigate(item.route)}
-                  className={`text-2xl font-light text-left py-2 ${
-                    currentRoute === item.route
+                  className={`text-2xl font-light text-left py-2 ${currentRoute === item.route
                       ? 'text-cyan-400'
                       : 'text-white'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
               ))}
-              
+
               <div className="h-px bg-white/10 w-full my-4" />
-              
-              <div className="flex flex-col gap-4">
+
+              <div className="flex flex-col gap-4 pb-12">
                 <p className="text-sm text-gray-500 uppercase tracking-widest">Region</p>
                 {Object.values(REGIONS).map((r) => (
                   <button
@@ -123,11 +125,10 @@ export function Navigation() {
                       setRegion(r.id);
                       setIsMobileMenuOpen(false);
                     }}
-                    className={`text-left text-lg ${
-                      region === r.id
+                    className={`text-left text-lg ${region === r.id
                         ? 'text-cyan-400'
                         : 'text-gray-400'
-                    }`}
+                      }`}
                   >
                     {r.name}
                   </button>
