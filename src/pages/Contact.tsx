@@ -20,13 +20,13 @@ export function Contact() {
   });
 
   const budgetRanges: Record<string, string[]> = {
-    USD: ['< $50K', '$50K - $100K', '$100K - $250K', '$250K - $500K', '$500K+'],
-    EUR: ['< €50K', '€50K - €100K', '€100K - €250K', '€250K - €500K', '€500K+'],
-    GBP: ['< £50K', '£50K - £100K', '£100K - £250K', '£250K - £500K', '£500K+'],
-    JPY: ['< ¥5M', '¥5M - ¥10M', '¥10M - ¥25M', '¥25M - ¥50M', '¥50M+'],
-    AED: ['< AED 200K', 'AED 200K - 400K', 'AED 400K - 1M', 'AED 1M - 2M', 'AED 2M+'],
-    SAR: ['< SAR 200K', 'SAR 200K - 400K', 'SAR 400K - 1M', 'SAR 1M - 2M', 'SAR 2M+'],
-    INR: ['< ₹5L', '₹5L - ₹10L', '₹10L - ₹25L', '₹25L - ₹50L', '₹50L+'],
+    USD: ['$1k - $5k', '$5k - $10k', '$10k - $20k', '$20k+'],
+    EUR: ['€1k - €5k', '€5k - €10k', '€10k - €20k', '€20k+'],
+    GBP: ['£1k - £5k', '£5k - £10k', '£10k - £20k', '£20k+'],
+    JPY: ['¥150k - ¥750k', '¥750k - ¥1.5M', '¥1.5M - ¥3M', '¥3M+'],
+    AED: ['AED 2.5k - 5k', 'AED 5k - 10k', 'AED 10k - 20k', 'AED 20k+'],
+    SAR: ['SAR 2.5k - 5k', 'SAR 5k - 10k', 'SAR 10k - 20k', 'SAR 20k+'],
+    INR: ['₹50k - ₹2L', '₹2L - ₹5L', '₹5L - ₹10L', '₹10L+'],
   };
 
   const countryCodes = [
